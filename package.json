@@ -1,0 +1,39 @@
+{
+  "name": "stat-crit-value-calculator",
+  "version": "23.9.0",
+  "description": "現代統計學才不用查表 - 統計量臨界值計算器",
+  "author": {
+    "name": "鐘柏倫 (Cenlun Chung Po Lun)"
+  },
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "lint": "ng lint"
+  },
+  "dependencies": {
+    "@angular/common": "^16.2.4",
+    "@angular/compiler": "^16.2.4",
+    "@angular/core": "^16.2.4",
+    "@angular/platform-browser": "^16.2.4",
+    "zone.js": "~0.13.1"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^16.2.1",
+    "@angular-eslint/builder": "16.1.2",
+    "@angular-eslint/eslint-plugin": "16.1.2",
+    "@angular-eslint/eslint-plugin-template": "16.1.2",
+    "@angular-eslint/schematics": "16.1.2",
+    "@angular-eslint/template-parser": "16.1.2",
+    "@angular/cli": "~16.2.1",
+    "@angular/compiler-cli": "^16.2.4",
+    "@typescript-eslint/eslint-plugin": "6.6.0",
+    "@typescript-eslint/parser": "6.6.0",
+    "eslint": "^8.48.0",
+    "husky": "^8.0.3",
+    "prettier": "2.8.8",
+    "pretty-quick": "^3.1.3",
+    "typescript": "~5.1.6"
+  },
+  "private": true
+}
