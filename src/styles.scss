@@ -8,6 +8,8 @@ $primary: #431f16 !default;
 @import "../node_modules/bootstrap/scss/tables";
 @import "../node_modules/bootstrap/scss/forms";
 
+@import "widgets/soft-button";
+
 * {
   color: $primary;
   -webkit-user-select: none;

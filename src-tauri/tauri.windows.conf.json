@@ -1,5 +1,15 @@
 {
+  "build": {
+    "withGlobalTauri": true
+  },
   "tauri": {
+    "allowlist": {
+      "window": {
+        "create": true,
+        "close": true,
+        "startDragging": true
+      }
+    },
     "bundle": {
       "identifier": "io.github.ccpl17.stat-crit-value-calculator",
       "targets": "nsis",

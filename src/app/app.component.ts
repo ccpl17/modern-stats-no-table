@@ -1,6 +1,8 @@
 import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
 
+import { WebviewWindow } from "@tauri-apps/api/window";
+
 import { CellValue, HyperFormula, RawCellContent } from "hyperformula";
 
 @Component({
@@ -156,5 +158,20 @@ export class AppComponent {
     this.data = [[this.chiSqPRt, this.chiSqDfRt, `=IFERROR(ROUND(CHISQ.INV.RT(A1,B1),4),"")`]];
     this.sheet = HyperFormula.buildFromArray(<RawCellContent[][]>this.data, this.options);
     this.chiSqCvRt = this.sheet.getCellValue({ col: 2, row: 0, sheet: 0 });
+  }
+
+  public widgetAbout(): void {
+    new WebviewWindow("about", {
+      url: "widgets/about/about.html",
+      center: true,
+      width: 360,
+      height: 241,
+      resizable: false,
+      maximizable: false,
+      minimizable: false,
+      title: "關於現代統計學才不用查表",
+      transparent: true,
+      decorations: false,
+    });
   }
 }
