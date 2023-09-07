@@ -4,8 +4,15 @@
   },
   "tauri": {
     "allowlist": {
+      "fs": {
+        "scope": [
+          "$RESOURCE/_up_/dist/stat-crit-value-calculator/3rdpartylicenses.txt"
+        ],
+        "readFile": true
+      },
       "window": {
         "create": true,
+        "show": true,
         "close": true,
         "startDragging": true
       }
@@ -13,6 +20,9 @@
     "bundle": {
       "identifier": "io.github.ccpl17.stat-crit-value-calculator",
       "targets": "nsis",
+      "resources": [
+        "../dist/stat-crit-value-calculator/3rdpartylicenses.txt"
+      ],
       "windows": {
         "nsis": {
           "license": "../dist/stat-crit-value-calculator/3rdpartylicenses.txt",

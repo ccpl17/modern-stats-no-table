@@ -174,4 +174,23 @@ export class AppComponent {
       decorations: false,
     });
   }
+
+  public async widgetThirdPartyLicenses(): Promise<void> {
+    const webviewWindow = new WebviewWindow("third_party_licenses", {
+      url: "widgets/third-party-licenses/third-party-licenses.html",
+      center: true,
+      width: 586,
+      height: 464,
+      resizable: false,
+      maximizable: false,
+      minimizable: false,
+      title: "第三方授權條款",
+      visible: false,
+    });
+
+    await webviewWindow.once("tauri://created", async () => {
+      await new Promise((resolve) => setTimeout(resolve, 100));
+      await webviewWindow.show();
+    });
+  }
 }
