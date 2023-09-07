@@ -1,0 +1,19 @@
+{
+  "tauri": {
+    "bundle": {
+      "identifier": "io.github.ccpl17.stat-crit-value-calculator",
+      "targets": "nsis",
+      "windows": {
+        "nsis": {
+          "license": "../dist/stat-crit-value-calculator/3rdpartylicenses.txt",
+          "headerImage": "nsis/headerImage.bmp",
+          "sidebarImage": "nsis/sidebarImage.bmp",
+          "installerIcon": "icons/icon.ico",
+          "languages": [
+            "TradChinese"
+          ]
+        }
+      }
+    }
+  }
+}

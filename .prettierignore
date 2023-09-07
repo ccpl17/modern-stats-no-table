@@ -29,3 +29,6 @@ tsconfig.spec.json
 /libpeerconnection.log
 testem.log
 /typings
+
+# Tauri
+src-tauri/target/
