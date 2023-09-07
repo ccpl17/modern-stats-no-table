@@ -1,1 +1,74 @@
-/* You can add global styles to this file, and also import other style files */
+$body-bg: #f8f6ff !default;
+$primary: #431f16 !default;
+
+@import "../node_modules/bootstrap/scss/bootstrap-utilities.scss";
+@import "../node_modules/bootstrap/scss/bootstrap-reboot.scss";
+@import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
+
+@import "../node_modules/bootstrap/scss/tables";
+@import "../node_modules/bootstrap/scss/forms";
+
+* {
+  color: $primary;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+::-moz-selection {
+  color: wheat;
+  background: $primary;
+}
+
+::selection {
+  color: wheat;
+  background: $primary;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+input {
+  color: $primary !important;
+
+  &[type="text"] {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+  }
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  color: $primary !important;
+}
+
+td,
+th {
+  vertical-align: middle;
+}
+
+.cell-disabled {
+  background: #d0cece !important;
+  text-align: center;
+}
+
+.table {
+  border-color: $primary !important;
+}
