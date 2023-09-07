@@ -1,59 +1,9 @@
 {
-  "$schema": "../node_modules/@tauri-apps/cli/schema.json",
-  "build": {
-    "beforeBuildCommand": "npm run build",
-    "beforeDevCommand": "npm start",
-    "devPath": "http://localhost:4200",
-    "distDir": "../dist/stat-crit-value-calculator"
-  },
   "package": {
     "productName": "stat-crit-value-calculator",
-    "version": "23.9.0"
+    "version": "../package.json"
   },
   "tauri": {
-    "allowlist": {
-      "all": false
-    },
-    "bundle": {
-      "active": true,
-      "category": "Utility",
-      "copyright": "© 2023 鐘柏倫 (Cenlun Chung Po Lun)",
-      "deb": {
-        "depends": []
-      },
-      "externalBin": [],
-      "icon": [
-        "icons/32x32.png",
-        "icons/128x128.png",
-        "icons/128x128@2x.png",
-        "icons/icon.icns",
-        "icons/icon.ico"
-      ],
-      "identifier": "io.github.ccpl17.stat-crit-value-calculator",
-      "publisher": "鐘柏倫 (Cenlun Chung Po Lun)",
-      "longDescription": "現代統計學才不用查表 - 統計量臨界值計算器",
-      "macOS": {
-        "entitlements": null,
-        "exceptionDomain": "",
-        "frameworks": [],
-        "providerShortName": null,
-        "signingIdentity": null
-      },
-      "resources": [],
-      "shortDescription": "現代統計學才不用查表 - 統計量臨界值計算器",
-      "targets": "all",
-      "windows": {
-        "certificateThumbprint": null,
-        "digestAlgorithm": "sha256",
-        "timestampUrl": ""
-      }
-    },
-    "security": {
-      "csp": null
-    },
-    "updater": {
-      "active": false
-    },
     "windows": [
       {
         "center": true,
@@ -62,6 +12,28 @@
         "title": "現代統計學才不用查表",
         "visible": false
       }
-    ]
+    ],
+    "bundle": {
+      "active": true,
+      "identifier": "io.github.ccpl17.stat-crit-value-calculator",
+      "publisher": "鐘柏倫 (Cenlun Chung Po Lun)",
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ],
+      "copyright": "© 2023 鐘柏倫 (Cenlun Chung Po Lun)",
+      "category": "Utility",
+      "shortDescription": "現代統計學才不用查表 - 統計量臨界值計算器",
+      "longDescription": "現代統計學才不用查表 - 統計量臨界值計算器"
+    }
+  },
+  "build": {
+    "devPath": "http://localhost:4200",
+    "distDir": "../dist/stat-crit-value-calculator",
+    "beforeDevCommand": "npm start",
+    "beforeBuildCommand": "npm run build"
   }
 }

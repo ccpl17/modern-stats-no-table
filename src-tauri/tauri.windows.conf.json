@@ -1,25 +1,8 @@
 {
-  "build": {
-    "withGlobalTauri": true
-  },
   "tauri": {
-    "allowlist": {
-      "fs": {
-        "scope": [
-          "$RESOURCE/_up_/dist/stat-crit-value-calculator/3rdpartylicenses.txt"
-        ],
-        "readFile": true
-      },
-      "window": {
-        "create": true,
-        "show": true,
-        "close": true,
-        "startDragging": true
-      }
-    },
     "bundle": {
-      "identifier": "io.github.ccpl17.stat-crit-value-calculator",
       "targets": "nsis",
+      "identifier": "io.github.ccpl17.stat-crit-value-calculator",
       "resources": [
         "../dist/stat-crit-value-calculator/3rdpartylicenses.txt"
       ],
@@ -34,6 +17,23 @@
           ]
         }
       }
+    },
+    "allowlist": {
+      "fs": {
+        "scope": [
+          "$RESOURCE/_up_/dist/stat-crit-value-calculator/3rdpartylicenses.txt"
+        ],
+        "readFile": true
+      },
+      "window": {
+        "create": true,
+        "show": true,
+        "close": true,
+        "startDragging": true
+      }
     }
+  },
+  "build": {
+    "withGlobalTauri": true
   }
 }
