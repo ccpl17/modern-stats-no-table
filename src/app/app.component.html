@@ -58,7 +58,13 @@
     </tbody>
   </table>
   <div class="d-flex justify-content-center gap-3">
-    <button class="soft-button" (click)="widgetAbout()">關於</button>
+    <button
+      *ngIf="navigator.appVersion.indexOf('Win') !== -1"
+      class="soft-button"
+      (click)="widgetAbout()"
+    >
+      關於
+    </button>
     <button class="soft-button" (click)="widgetThirdPartyLicenses()">第三方授權條款</button>
   </div>
 </div>
