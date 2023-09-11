@@ -12,7 +12,8 @@
     "lint": "ng lint",
     "tauri": "tauri",
     "dev": "tauri dev",
-    "release": "tauri build"
+    "release": "tauri build",
+    "release:macos": "tauri build --target aarch64-apple-darwin && tauri build --target x86_64-apple-darwin"
   },
   "dependencies": {
     "@angular/common": "^16.2.4",

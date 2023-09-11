@@ -32,3 +32,6 @@ testem.log
 
 # Tauri
 src-tauri/target/
+
+# Thumbnails
+._*
