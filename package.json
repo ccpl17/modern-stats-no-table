@@ -2,8 +2,13 @@
   "name": "stat-crit-value-calculator",
   "version": "23.9.0",
   "description": "現代統計學才不用查表 - 統計量臨界值計算器",
+  "license": "GPL-3.0-only",
   "author": {
     "name": "鐘柏倫 (Cenlun Chung Po Lun)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ccpl17/stat-crit-value-calculator"
   },
   "scripts": {
     "ng": "ng",
