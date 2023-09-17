@@ -28,6 +28,14 @@
       "category": "Utility",
       "shortDescription": "現代統計學才不用查表 - 統計量臨界值計算器",
       "longDescription": "現代統計學才不用查表 - 統計量臨界值計算器"
+    },
+    "updater": {
+      "active": true,
+      "dialog": true,
+      "endpoints": [
+        "https://gist.githubusercontent.com/ccpl17/0330e04f234b987104345bebd510695d/raw/"
+      ],
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDJGNjIzREVEMUUyMzk0NjQKUldSa2xDTWU3VDFpTDNwYXNYQVBBWEdYZVJYbnVhRjVTT3l3Szcrdllzb2VyeC9vV3pyd1k1UW0K"
     }
   },
   "build": {
