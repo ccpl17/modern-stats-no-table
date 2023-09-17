@@ -1,7 +1,10 @@
 {
   "tauri": {
     "bundle": {
-      "targets": "nsis",
+      "targets": [
+        "nsis",
+        "updater"
+      ],
       "identifier": "io.github.ccpl17.stat-crit-value-calculator",
       "resources": [
         "../dist/stat-crit-value-calculator/3rdpartylicenses.txt"
@@ -24,6 +27,10 @@
           "$RESOURCE/_up_/dist/stat-crit-value-calculator/3rdpartylicenses.txt"
         ],
         "readFile": true
+      },
+      "shell": {
+        "all": false,
+        "open": true
       },
       "window": {
         "create": true,
