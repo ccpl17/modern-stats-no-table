@@ -5,22 +5,6 @@
       "resources": [
         "../dist/stat-crit-value-calculator/3rdpartylicenses.txt"
       ]
-    },
-    "allowlist": {
-      "fs": {
-        "scope": [
-          "$RESOURCE/_up_/dist/stat-crit-value-calculator/3rdpartylicenses.txt"
-        ],
-        "readFile": true
-      },
-      "shell": {
-        "all": false,
-        "open": true
-      },
-      "window": {
-        "create": true,
-        "show": true
-      }
     }
   },
   "build": {

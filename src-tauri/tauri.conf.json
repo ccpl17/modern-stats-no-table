@@ -29,6 +29,24 @@
       "shortDescription": "現代統計學才不用查表 - 統計量臨界值計算器",
       "longDescription": "現代統計學才不用查表 - 統計量臨界值計算器"
     },
+    "allowlist": {
+      "fs": {
+        "scope": [
+          "$RESOURCE/_up_/dist/stat-crit-value-calculator/3rdpartylicenses.txt"
+        ],
+        "readFile": true
+      },
+      "shell": {
+        "all": false,
+        "open": true
+      },
+      "window": {
+        "create": true,
+        "show": true,
+        "close": true,
+        "startDragging": true
+      }
+    },
     "updater": {
       "active": true,
       "dialog": true,
