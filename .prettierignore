@@ -35,3 +35,6 @@ src-tauri/target/
 
 # Thumbnails
 ._*
+
+# .NET MAUI
+src-maui/

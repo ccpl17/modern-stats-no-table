@@ -71,6 +71,15 @@
     >
       關於
     </button>
-    <button class="soft-button" (click)="widgetThirdPartyLicenses()">第三方授權條款</button>
+    <button
+      class="soft-button"
+      (click)="widgetThirdPartyLicenses()"
+      *ngIf="navigator.appVersion.indexOf('Android') === -1"
+    >
+      第三方授權條款
+    </button>
   </div>
+  <p *ngIf="navigator.appVersion.indexOf('Android') !== -1">
+    版本 : {{ appVersion }}<br />© 2023 鐘柏倫 (Cenlun Chung Po Lun)
+  </p>
 </div>
