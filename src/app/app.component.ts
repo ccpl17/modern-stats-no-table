@@ -1,6 +1,8 @@
 import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
 
+import packageJson from "../../package.json";
+
 import { WebviewWindow } from "@tauri-apps/api/window";
 
 import { CellValue, HyperFormula, RawCellContent } from "hyperformula";
@@ -10,10 +12,11 @@ import { CellValue, HyperFormula, RawCellContent } from "hyperformula";
   standalone: true,
   imports: [CommonModule],
   templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.scss"],
+  styles: [],
 })
 export class AppComponent {
   public title: string = "現代統計學才不用查表";
+  public appVersion: string = packageJson.version;
   private data?: unknown[][];
   private sheet?: HyperFormula;
   private options: { licenseKey: string } = { licenseKey: "gpl-v3" };
